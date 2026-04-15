@@ -65,3 +65,7 @@ HTTP 202 Accepted
 ## CloudWatch Logs
 
 ![CloudWatch Logs](cloudwatch.png)
+
+## Notes on Load Test
+
+50 requests were sent concurrently with 10,000,000 points each. The first 10 requests returned 202 Accepted successfully. The remaining 503 errors are due to AWS new account default Lambda concurrency limit of 10 (not a code issue). A quota increase request has been submitted to AWS Support to raise the limit to 1000.
