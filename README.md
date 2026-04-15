@@ -57,3 +57,11 @@ POST /estimate_pi
 HTTP 202 Accepted
 {"message": "Accepted"}
 ```
+
+## Load Test Results
+
+![Load Test](loadtest.png)
+
+## CloudWatch Logs
+
+![CloudWatch Logs](cloudwatch.png)
